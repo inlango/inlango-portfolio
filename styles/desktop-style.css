@@ -1,0 +1,133 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+    background: #21212E;
+}
+
+.inlango-container {
+    margin-top: 0 !important;
+    padding: 1% 11%;
+}
+
+.inlango-container-purple-patch {
+    background-image: repeating-linear-gradient(        
+        #21212E,
+        #21212E 49.7vh,
+        #FFFFFF 50vh,
+        #FFFFFF 150vh,
+        #21212E 150.3vh
+    );
+}
+
+.inlango-container-purple-patch > h1{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.inlango-container-intro {
+    height: 100vh;
+    background-color: #21212E;    
+    color: #FFFFFF;
+    display: grid;
+    grid-template-rows: 150px auto;
+    margin-bottom: 10%;
+
+}
+
+.inlango-heading {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 20% 80%;
+    padding: 2rem 9.7% 0 9.7%;
+    height: 150px;
+}
+
+.inlango-logo {
+    height: 150px;
+    width: auto;
+    justify-self: left;
+}
+
+.inlango-logo > img{
+    height: 100%;
+    width: auto;
+}
+
+/*homepage image slider(billboard)*/
+.inlango-home-billboard{    
+    padding: 9.7% 11%;
+    margin-bottom:
+}
+
+.inlango-home-billboard > h1 {
+    font-size: 5rem;   
+    font-weight: 300;
+}
+
+.inlango-home-billboard > p {
+    color: #66667E;
+    font-size: 2.0rem;
+    line-height: 0.7rem;
+}
+
+.inlango-home-billboard > a {
+    color: #FEBF00;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+/*navigation menu*/
+.inlango-navigation-menu {
+    align-self: center;
+    justify-self: right;
+}
+
+.inlango-navigation-menu > ul {
+    list-style-type: none;
+}
+
+.inlango-navigation-menu > ul > li {
+    display: inline;
+}
+
+.inlango-navigation-menu > ul > li > a{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 0.35rem 1.3rem;
+}
+
+.inlango-navigation-menu > ul > li > .inlango-active {
+    border: 0.1rem #FFF solid;
+    border-radius: 0.4rem;
+}
+
+/*services card*/
+.row {
+    display:grid;
+    grid-template-columns: 45.5% 45.5%;
+    grid-column-gap: 9%;
+}
+.inlango-service-card {
+    height: 70vh;
+    margin: 10% 0;
+    background-color: #21212E;
+    border: 1px black solid;
+    border-radius: 5%;
+}
+
+/*footer*/
+.inlango-footer {
+    background-color: #21212E;
+    color:#66667E;
+    display: grid;
+    padding: 2rem 9.7%;
+    grid-template-columns: 40% 20% 20% 20%;
+    font-size: 0.8rem;
+}
+
+.inlango-footer h2{
+    color: #FFFFFF;
+    font-size: 1rem;
+}
