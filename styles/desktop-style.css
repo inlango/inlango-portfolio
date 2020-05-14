@@ -1,8 +1,20 @@
+:root {
+    --neon-green: #5DFE93;
+    --dark-background: #21212E;
+    --white: #FFFFFF;
+    --logo-blue: #3F619E ;
+    --logo-red: #FE5D5D ;
+    --logo-purple: #70309F ;
+    --yellow: #FEBF00 ;
+    --landing-page-gray: #66667E ;
+    --light-navy: #252533;
+}
+
 body {
     padding: 0;
     margin: 0;
     font-family: 'Muli', sans-serif;
-    background: #21212E;
+    background: var(--dark-background);
 }
 
 .inlango-container {
@@ -12,24 +24,24 @@ body {
 
 .inlango-container-purple-patch {
     background-image: repeating-linear-gradient(        
-        #21212E,
-        #21212E 49.7vh,
-        #FFFFFF 50vh,
-        #FFFFFF 150vh,
-        #21212E 150.3vh
+        var(--dark-background),
+        var(--dark-background) 49.7vh,
+        var(--white) 50vh,
+        var(--white) 150vh,
+        var(--dark-background) 150.3vh
     );
 }
 
 .inlango-container-purple-patch > h1{
-    color: #FFFFFF;
+    color: var(--white);
     text-align: center;
     font-size: 2.4rem;
 }
 
 .inlango-container-intro {
     height: 100vh;
-    background-color: #21212E;    
-    color: #FFFFFF;
+    background-color: var(--dark-background);    
+    color: var(--white);
     display: grid;
     grid-template-rows: 150px auto;
     margin-bottom: 10%;
@@ -73,11 +85,20 @@ body {
 }
 
 .inlango-home-billboard > a {
-    color: #FEBF00;
+    color: var(--yellow);
     font-size: 2.2rem;
     font-weight: 400;
 }
 
+.inlango-billboard-background {
+    position:relative; 
+    height: 85vh; 
+    width: auto; 
+    bottom: 80%; 
+    right: -77%; 
+    -ms-transform: rotate(-25deg); /* IE 9 */
+    transform: rotate(-18deg);
+}
 /*navigation menu*/
 .inlango-navigation-menu {
     align-self: center;
@@ -94,7 +115,7 @@ body {
 
 .inlango-navigation-menu > ul > li > a{
     text-decoration: none;
-    color: #FFFFFF;
+    color: var(--white);
     padding: 0.35rem 1.3rem;
 }
 
@@ -109,18 +130,49 @@ body {
     grid-template-columns: 45.5% 45.5%;
     grid-column-gap: 9%;
 }
+
 .inlango-service-card {
     height: 70vh;
     margin: 10% 0;
-    background-color: #21212E;
-    border: 1px black solid;
-    border-radius: 5%;
+    background-color: var(--dark-background);
+    border-radius: 1.6%;
+    text-align: center;
+    padding: 2.4rem 0 0 0;
+    box-shadow: 0px 0px 31px 4px rgba(0, 0, 0, 0.44);
+    color: var(--landing-page-gray);
+}
+
+.inlango-service-card h2{
+    color: var(--white);
+    font-size: 2.4rem;
+    line-height: 6px;
+}
+
+.inlango-service-card a {
+    background-color: var(--yellow);
+    padding: 1rem 3rem;
+    border-radius: 2%;
+    line-height: 2rem;
+    text-decoration: none;
+    color: var(--dark-background);
+    font-weight: bold;
+    box-shadow: 0px 0px 31px 2px rgba(254, 191, 0, 0.4);
+    margin-top: 20px;
+}
+.inlango-service-card > div:first-of-type {    
+    background-color: var(--light-navy);
+}
+
+.inlango-service-card > div {
+    padding: 0.1rem 15%;
+    line-height: 1.5rem;
+    font-weight: 700;
 }
 
 /*footer*/
 .inlango-footer {
-    background-color: #21212E;
-    color:#66667E;
+    background-color: var(--dark-background);
+    color: var(--light-navy);
     display: grid;
     padding: 2rem 9.7%;
     grid-template-columns: 40% 20% 20% 20%;
@@ -128,6 +180,6 @@ body {
 }
 
 .inlango-footer h2{
-    color: #FFFFFF;
+    color: var(--white);
     font-size: 1rem;
 }
