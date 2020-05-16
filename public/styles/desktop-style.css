@@ -172,7 +172,7 @@ body {
 /*footer*/
 .inlango-footer {
     background-color: var(--dark-background);
-    color: var(--light-navy);
+    color: var(--landing-page-gray);
     display: grid;
     padding: 2rem 9.7%;
     grid-template-columns: 40% 20% 20% 20%;
@@ -182,4 +182,4 @@ body {
 .inlango-footer h2{
     color: var(--white);
     font-size: 1rem;
-}
+}   
