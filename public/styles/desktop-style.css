@@ -70,7 +70,7 @@ body {
 /*homepage image slider(billboard)*/
 .inlango-home-billboard{    
     padding: 9.7% 11%;
-    margin-bottom:
+    line-height: 6rem;
 }
 
 .inlango-home-billboard > h1 {
