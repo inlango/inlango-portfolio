@@ -8,6 +8,7 @@
     --yellow: #FEBF00 ;
     --landing-page-gray: #66667E ;
     --light-navy: #252533;
+    font-size: 2vh;
 }
 
 body {
@@ -19,9 +20,152 @@ body {
 
 .inlango-container {
     margin-top: 0 !important;
-    padding: 1% 11%;
+    padding: 5% 11%;
 }
 
+.inlango-container-intro {
+    background-color: var(--dark-background);    
+    color: var(--white);
+}
+
+.inlango-logo {
+    height: 150px;
+}
+
+.inlango-logo > img{
+    height: 100%;
+    width: auto;
+}
+
+
+/*navigation menu*/
+.inlango-navigation-menu {
+    display: grid;
+    grid-template-columns: 20% 5% auto;
+    padding: 2rem 7vw 0 7vw;
+}
+
+.inlango-navigation-menu ul{
+    justify-self: right;
+    align-self: center;
+}
+
+.inlango-navigation-menu > ul > li{
+    display: inline;
+}
+
+.inlango-navigation-menu > ul > li a {
+    color: var(--white);
+    text-decoration: none;
+    display: inline;
+    padding: 0.5rem 1.7rem;
+}
+
+.inlango-navigation-menu .inlango-menu-button a{
+    display: none;
+}
+
+.inlango-navigation-menu .inlango-active {
+    border: 1.4px solid var(--white);
+    border-radius: 7px;
+
+}
+
+@media screen and (max-width: 700px) {
+	.inlango-navigation-menu {
+        display: grid;
+        grid-template-areas: 
+        "logo logo logo logo logo menu-button"
+        "menu-item menu-item menu-item menu-item menu-item menu-item";
+        height: auto;
+    }
+
+    .inlango-navigation-menu ul {
+        display: none;
+        grid-area: menu-item;
+        justify-self: center;
+        width: 100%;
+        background-color: var(--white);
+        padding-inline-start: unset;
+    }
+
+    .inlango-navigation-menu .inlango-menu-button {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .inlango-navigation-menu .inlango-menu-button a {
+        grid-area: menu-button;
+        display: block;
+        color: var(--white);
+    }
+
+    .inlango-logo {
+        grid-area: logo;
+    }
+
+    .inlango-navigation-menu > ul > li{
+        display: block;
+        text-align: center;
+        height: 4rem;
+        line-height: 4rem;
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .inlango-navigation-menu > ul > li a {
+        color: var(--dark-background);
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .inlango-navigation-menu > ul > li > a:hover {
+        border: 1px solid var(--dark-background);
+    }
+
+    .inlango-navigation-menu .inlango-active {
+        background-color: var(--dark-background);
+        color: var(--white);
+        box-sizing: border-box;
+    }
+}
+
+.inlango-responsive {
+	display: block !important;
+}
+
+/*homepage image slider(billboard)*/
+.inlango-home-billboard{   
+    padding: 9.7% 0 9.7% 11%;
+    width: 100%;
+    line-height: 120%;
+    background-image: url(./../images/billboard-background-inlango.png);
+    background-size: contain;
+    background-position: 75% 50%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.inlango-home-billboard > h1 {
+    font-size: 5rem;   
+    font-weight: 300;
+}
+
+.inlango-home-billboard > p {
+    color: #66667E;
+    font-size: 2.0rem;
+    line-height: 150%;
+}
+
+.inlango-home-billboard > a {
+    color: var(--yellow);
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+/*dark - white alternating background container*/
 .inlango-container-purple-patch {
     background-image: repeating-linear-gradient(        
         var(--dark-background),
@@ -38,127 +182,45 @@ body {
     font-size: 2.4rem;
 }
 
-.inlango-container-intro {
-    height: 100vh;
-    background-color: var(--dark-background);    
-    color: var(--white);
-    display: grid;
-    grid-template-rows: 150px auto;
-    margin-bottom: 10%;
-
-}
-
-.inlango-heading {
-    display: grid;
-    grid-template-rows: 100%;
-    grid-template-columns: 20% 80%;
-    padding: 2rem 9.7% 0 9.7%;
-    height: 150px;
-}
-
-.inlango-logo {
-    height: 150px;
-    width: auto;
-    justify-self: left;
-}
-
-.inlango-logo > img{
-    height: 100%;
-    width: auto;
-}
-
-/*homepage image slider(billboard)*/
-.inlango-home-billboard{    
-    padding: 9.7% 11%;
-    line-height: 6rem;
-}
-
-.inlango-home-billboard > h1 {
-    font-size: 5rem;   
-    font-weight: 300;
-}
-
-.inlango-home-billboard > p {
-    color: #66667E;
-    font-size: 2.0rem;
-    line-height: 0.7rem;
-}
-
-.inlango-home-billboard > a {
-    color: var(--yellow);
-    font-size: 2.2rem;
-    font-weight: 400;
-}
-
-.inlango-billboard-background {
-    position:relative; 
-    height: 85vh; 
-    width: auto; 
-    bottom: 80%; 
-    right: -77%; 
-    -ms-transform: rotate(-25deg); /* IE 9 */
-    transform: rotate(-18deg);
-}
-/*navigation menu*/
-.inlango-navigation-menu {
-    align-self: center;
-    justify-self: right;
-}
-
-.inlango-navigation-menu > ul {
-    list-style-type: none;
-}
-
-.inlango-navigation-menu > ul > li {
-    display: inline;
-}
-
-.inlango-navigation-menu > ul > li > a{
-    text-decoration: none;
-    color: var(--white);
-    padding: 0.35rem 1.3rem;
-}
-
-.inlango-navigation-menu > ul > li > .inlango-active {
-    border: 0.1rem #FFF solid;
-    border-radius: 0.4rem;
-}
-
 /*services card*/
 .row {
     display:grid;
     grid-template-columns: 45.5% 45.5%;
+    grid-template-rows: minmax(70vh, auto);
     grid-column-gap: 9%;
 }
+
 @media screen and (max-width: 768px) {
     .row {        
         display:grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 100%;        
+        grid-template-rows: minmax(70vh, auto)  minmax(70vh, auto);
     }
 }
 
 .inlango-service-card {
-    height: 70vh;
     margin: 10% 0;
     background-color: var(--dark-background);
     border-radius: 1.6%;
     text-align: center;
-    padding: 2.4rem 0 0 0;
+    padding: 2.4rem 0 ;
     box-shadow: 0px 0px 31px 4px rgba(0, 0, 0, 0.44);
     color: var(--landing-page-gray);
+    display: grid;
+    grid-template-rows: auto auto auto;
 }
 
 .inlango-service-card h2{
     color: var(--white);
     font-size: 2.4rem;
-    line-height: 6px;
+    line-height: 120%;
 }
 
 .inlango-service-card a {
     background-color: var(--yellow);
     padding: 1rem 3rem;
     border-radius: 2%;
-    line-height: 2rem;
+    line-height: 150%;
     text-decoration: none;
     color: var(--dark-background);
     font-weight: bold;
@@ -169,10 +231,91 @@ body {
     background-color: var(--light-navy);
 }
 
+.inlango-service-card > div:nth-of-type(2) {    
+    padding: 2rem;
+}
+
 .inlango-service-card > div {
     padding: 0.1rem 15%;
-    line-height: 1.5rem;
+    line-height: 150%;
     font-weight: 700;
+}
+
+.inlango-service-card img {
+    height: 100px;
+    width:  auto;
+}
+
+.inlango-service-card p {
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.inlango-service-card ul {      
+    padding-inline-start: unset;
+}
+
+.inlango-service-card li {
+    list-style-type: none;
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;  
+}
+
+.inlango-container-dark {
+    height: 100vh;    
+    line-height: 150%;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.inlango-container-dark::after{
+
+    background-image: url(./../images/background-inlango-dark.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    opacity: 0.1;
+}
+
+.inlango-container-dark {
+    color: var(--white);
+    font-size: 1.5rem;
+    line-height: 150%;
+}
+
+.inlango-container-dark a {
+    color: var(--yellow);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.inlango-container-dark h1 {
+    color: var(--white);
+    text-align: left;
+    font-size: 5.5rem;
+    font-weight: 100;
+    line-height: 120%;
+}
+
+.inlango-container-light {
+    background-color: var(--white);
+}
+
+.inlango-container-light h1 {
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.inlango-container-light p {
+    font-size: 2.4rem;
 }
 
 /*footer*/
@@ -189,3 +332,23 @@ body {
     color: var(--white);
     font-size: 1rem;
 }   
+
+.inlango-footer a{
+    color: var(--white);
+}
+
+.inlango-footer div:nth-child(4) {
+    justify-self: right;
+    text-align: right;
+}
+.inlango-footer div:nth-child(4) a {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    border: 2px solid var(--landing-page-gray);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    color: var(--landing-page-gray);
+    margin: 0 0 0 1rem;
+}
