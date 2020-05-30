@@ -84,7 +84,7 @@ class App extends React.Component {
             {/*<!--intro section-->*/}
             <div className="inlango-container-intro">
                 <div className="inlango-navigation-menu" id="inlango-navigation-menu">
-                    <div className="inlango-logo"><img src="images/temp-logo.png" alt="inlango logo" /></div>
+                    <div className="inlango-logo"><img src="images/logo-inlango.png" alt="inlango logo" /></div>
                     <div className="inlango-menu-button"><a href="javascript:void(0);" id="inlango-menu-button"
                         onClick={this.toggleMenu}><i className="fa fa-bars fa-3x"></i></a></div>
                     <ul id="inlango-responsive-menu">
@@ -106,7 +106,7 @@ class App extends React.Component {
                 <div class="inlango-footer">
                     <div>
                         <p>
-                            Inlango Consulting | Digital Transformation | IT Services - Australia
+                            Inlango Consulting | Digital | IT Services 
                         </p>
                         <p>&copy;2020 inlango.com</p>
                     </div>
@@ -122,6 +122,7 @@ class App extends React.Component {
                         <h2>Social media</h2>
                         <a href="#facebook"><i class="fa fa-facebook fa-lg"></i></a>
                         <a href="#twitter"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a href="#linkedIn"><i class="fa fa-linkedin fa-lg"></i></a>
                     </div>
                 </div>
             </div>

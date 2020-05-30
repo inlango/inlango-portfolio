@@ -35,7 +35,7 @@ export default class Home extends React.Component {
                         {/*<!--service card-->*/}
                         <div className="inlango-service-card">
                             <div>
-                                <h2>Digital Transformation</h2>
+                                <h2>Digital</h2>
                                 <p>Migrate to the digital world</p>
                             </div>
                             <div>
@@ -103,7 +103,7 @@ export default class Home extends React.Component {
                     </div>
                 </div>
                 <div className="inlango-home-clients">
-                    <h1>Whom have we worked with?</h1>
+                    <h1>Our Clients and Partners</h1>
                     <div>
                         <div>
                             <a href="http://sgssl.com/"  rel="noopener noreferrer" target="_blank"><img src="/images/clients/logo-sinoglobal.png"  alt="client logo - sinoglobal" /></a>

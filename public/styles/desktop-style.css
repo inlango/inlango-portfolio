@@ -58,6 +58,7 @@ body {
     grid-template-columns: 20% 5% auto;
     padding: 0 9vw 0 9vw;
     z-index: 10000;
+    background-color: var(--white);
 }
 
 .inlango-navigation-menu ul{
@@ -71,11 +72,10 @@ body {
 }
 
 .inlango-navigation-menu > ul > li a {
-    color: var(--white);
+    color: var(--dark-background);
     text-decoration: none;
     display: inline;
-    padding: 0.5rem 1.7rem;    
-    border-radius: 7px;
+    padding: 0.5rem 1.7rem; 
     box-sizing: border-box;
 }
 @keyframes growFontSize {
@@ -87,11 +87,20 @@ body {
     }
 }
 
+@keyframes colorYellowFromDark {
+    0% {
+      color: var(--dark-background);
+    }
+    100% {
+      color: var(--yellow);      
+    }
+}
+
 .inlango-navigation-menu > ul > li > a:hover{
     /*box-shadow: -1px 1px 20px 3px var(--yellow);    
     /*box-shadow: 0px 0px 31px 2px rgba(254, 191, 0, 0.4);*/
     color: var(--yellow);
-    animation: 0.5s ease-out 0s 1 colorYellow forwards;
+    animation: 0.5s ease-out 0s 1 colorYellowFromDark forwards;
 }
 
 .inlango-navigation-menu .inlango-menu-button a{
@@ -99,7 +108,7 @@ body {
 }
 
 .inlango-navigation-menu .inlango-active {
-    border: 1.4px solid var(--white);
+    border: 1.4px solid var(--dark-background);
 
 }
 
@@ -130,7 +139,7 @@ body {
     .inlango-navigation-menu .inlango-menu-button a {
         grid-area: menu-button;
         display: block;
-        color: var(--white);
+        color: var(--dark-background);
     }
 
     .inlango-logo {
@@ -564,7 +573,7 @@ body {
     height: 76%;
     width: 15vw;
     box-sizing: border-box;
-    border-radius: 15% 15% 15% 15% / 35% 35% 35% 35%;
+    /*border-radius: 15% 15% 15% 15% / 35% 35% 35% 35%;*/
     overflow: hidden;
 }
 .inlango-home-clients > div > div:hover {    

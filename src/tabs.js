@@ -68,7 +68,7 @@ export default class Tabs extends React.Component {
             <div className="inlango-tabs">
                 <div>
                     <button onMouseOver={ ()=> {this.handleMouseOver(0)} } className = {this.state.currentTab === 0 ? "active" : "" }><span>Consulting</span></button>
-                    <button onMouseOver={ ()=> {this.handleMouseOver(1)} } className = {this.state.currentTab === 1 ? "active" : "" }><span>Digital Transformation</span></button>
+                    <button onMouseOver={ ()=> {this.handleMouseOver(1)} } className = {this.state.currentTab === 1 ? "active" : "" }><span>Digital</span></button>
                     <button onMouseOver={ ()=> {this.handleMouseOver(2)} } className = {this.state.currentTab === 2 ? "active" : "" }><span>IT services</span></button>
                     <button onMouseOver={ ()=> {this.handleMouseOver(3)} } className = {this.state.currentTab === 3 ? "active" : "" }><span>Content Writing</span></button>
                 </div>
