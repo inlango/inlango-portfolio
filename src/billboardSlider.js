@@ -5,18 +5,25 @@ export default class BillboardSlider extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            imageCount: 1,
+            imageCount: 0,//the current image index
             imagesURL: [
-                "/images/stock/consulting.jpg",
                 "/images/stock/digital-transformation.jpg",
+                "/images/stock/consulting.jpg",
                 "/images/stock/IT-services.jpg",
                 "/images/stock/content-writing.jpg"
-            ],
+            ],//images list. Add images here.
             imageReady: 0,
-            currentImage: "/images/stock/consulting.jpg",
-            images: [],
-            timeImageChange : "",
-            animationChange : ""
+            currentImage: "/images/stock/digital-transformation.jpg",//the current image url
+            images: [],//Array for image object
+            timeImageChange: "",//timer for image change
+            animationChange: "",//timer for opacity animation change
+            contents: [
+                <p><span>We are Inlango.</span></p>,
+                <p><span>We offer a range of services</span></p>,
+                <p><span>With us, perfection and functionality is a standard.</span></p>,
+                <p><span>Nice to meet you. Please take a look around.</span></p>,
+
+            ]
         }
         this.changeImage = this.changeImage.bind(this);
         this.startSliderTimer = this.startSliderTimer.bind(this);
@@ -25,7 +32,7 @@ export default class BillboardSlider extends React.Component {
     }
 
     componentDidMount() {
-
+        // All images are not finished loading
         this.setState({
             imageReady: this.state.imagesURL.length
         });
@@ -54,21 +61,17 @@ export default class BillboardSlider extends React.Component {
         this.setState({
             images: tempImage
         });
-
-        /*this.state.images.forEach((image) => {
-            image.onload = () => {
-                this.setState({
-                    imageReady: this.state.imageReady - 1
-                });
-
-            }
-        });*/
         this.startSliderTimer();
 
     }
 
+    componentWillUnmount() {
+        clearTimeout(this.state.animationChange);
+        clearInterval(this.state.timeImageChange)
+    }
+
     startSliderTimer() {
-        
+
 
         this.setState({
             timeImageChange: setInterval(() => {
@@ -85,22 +88,19 @@ export default class BillboardSlider extends React.Component {
     }
 
     changeImage() {
-        
-        
         this.setState({
             currentImage: this.state.imagesURL[this.state.imageCount]
         });
         document.getElementById("inlango-slider-image").style.opacity = 1;
-            this.setState({
-                animationChange: setTimeout(() => {
-                    document.getElementById("inlango-slider-image").style.opacity = 0;
-                }, 5400)
-            });
-        
+        this.setState({
+            animationChange: setTimeout(() => {
+                document.getElementById("inlango-slider-image").style.opacity = 0;
+            }, 5400)
+        });
     }
 
-    handleNextImage(){
-        if(this.state.imageCount === this.state.images.length - 1){
+    handleNextImage() {
+        if (this.state.imageCount === this.state.images.length - 1) {
             this.setState({
                 imageCount: 0
             });
@@ -110,20 +110,20 @@ export default class BillboardSlider extends React.Component {
                 imageCount: this.state.imageCount + 1
             });
         }
-        
+
         clearTimeout(this.state.animationChange);
         this.changeImage();
         clearInterval(this.state.timeImageChange)
         this.startSliderTimer();
     }
 
-    handlePrevImage(){
-        if(this.state.imageCount === 0) {
+    handlePrevImage() {
+        if (this.state.imageCount === 0) {
             this.setState({
                 imageCount: this.state.images.length - 1
             });
         }
-        else{
+        else {
             this.setState({
                 imageCount: this.state.imageCount - 1
             });
@@ -141,32 +141,36 @@ export default class BillboardSlider extends React.Component {
 
         if (this.state.imageReady != 0) {
             return (
-                <div>
-                    <div className="inlango-billboard-content">
-                        <div className="inlango-billboard-left"></div>
-                        <div>
-                            <h1><span>Loading...</span></h1>
+
+                <div className="inlango-home-billboard" id="inlango-home-billboard">
+                    <div>
+                        <div className="inlango-billboard-content">
+                            <div className="inlango-billboard-left"></div>
+                            <div>
+                                <h1><span>Loading...</span></h1>
+                            </div>
+                            <div className="inlango-billboard-right"></div>
                         </div>
-                        <div className="inlango-billboard-right"></div>
                     </div>
                 </div>
             );
         }
         else {
             return (
-                <div>
-                    <div className="inlango-billboard-content">
-                        <div className="inlango-billboard-left" onClick={this.handlePrevImage}><i className="fas fa-arrow-left"></i></div>
-                        <div>
-                            <h1><span>Hello World!</span></h1>
-                            <p><span>We are Inlango.</span></p>
-                            <p><span>With us, perfection and functionality is a standard.</span></p>
-                            <p><span>Good to see ya</span></p>
-                            <a href="#content">Here's what we do do.</a>
+
+                <div className="inlango-home-billboard" id="inlango-home-billboard">
+                    <div>
+                        <div className="inlango-billboard-content">
+                            <div className="inlango-billboard-left" onClick={this.handlePrevImage}><i className="fas fa-chevron-left fa-5x"></i></div>
+                            <div>
+                                <h1><span>Welcome!</span></h1>
+                                {this.state.contents[this.state.imageCount]}
+                                <a href="#content"><span>Here's what we do do.</span></a>
+                            </div>
+                            <div className="inlango-billboard-right" onClick={this.handleNextImage}><i className="fas fa-chevron-right fa-5x"></i></div>
                         </div>
-                        <div className="inlango-billboard-right" onClick={this.handleNextImage}><i className="fas fa-arrow-right"></i></div>
+                        <img className="inlango-slider-image" id="inlango-slider-image" src={this.state.currentImage} />
                     </div>
-                    <img className="inlango-slider-image" id="inlango-slider-image" src={this.state.currentImage} />
                 </div>
             );
         }
