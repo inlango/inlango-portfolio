@@ -68,7 +68,7 @@ export default class Portfolio extends React.Component {
                                 <h2>Technology Used</h2>
                                 <p>CSS / HTML / JavaScript</p>
                                 <a href="http://www.sgssl.com" rel="noopener noreferrer" target="_blank" className="portfolio-cards-button">Visit</a>
-                            </div>s
+                            </div>
                         </div>
                     </div>
                 </div>
