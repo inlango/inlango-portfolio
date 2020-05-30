@@ -6,7 +6,7 @@ export default class Tabs extends React.Component {
         this.state = {
             currentTab: 0,
             contents: [
-
+                
                 <ul>
                     <li>Agile leadership</li>
                     <li>DevOps</li>
@@ -67,10 +67,10 @@ export default class Tabs extends React.Component {
         return (
             <div className="inlango-tabs">
                 <div>
-                    <a onMouseOver={ ()=> {this.handleMouseOver(0)} } className = {this.state.currentTab === 0 ? "active" : "" }><span>Consulting</span></a>
-                    <a onMouseOver={ ()=> {this.handleMouseOver(1)} } className = {this.state.currentTab === 1 ? "active" : "" }><span>Digital Transformation</span></a>
-                    <a onMouseOver={ ()=> {this.handleMouseOver(2)} } className = {this.state.currentTab === 2 ? "active" : "" }><span>IT services</span></a>
-                    <a onMouseOver={ ()=> {this.handleMouseOver(3)} } className = {this.state.currentTab === 3 ? "active" : "" }><span>Content Writing</span></a>
+                    <button onMouseOver={ ()=> {this.handleMouseOver(0)} } className = {this.state.currentTab === 0 ? "active" : "" }><span>Consulting</span></button>
+                    <button onMouseOver={ ()=> {this.handleMouseOver(1)} } className = {this.state.currentTab === 1 ? "active" : "" }><span>Digital Transformation</span></button>
+                    <button onMouseOver={ ()=> {this.handleMouseOver(2)} } className = {this.state.currentTab === 2 ? "active" : "" }><span>IT services</span></button>
+                    <button onMouseOver={ ()=> {this.handleMouseOver(3)} } className = {this.state.currentTab === 3 ? "active" : "" }><span>Content Writing</span></button>
                 </div>
                 <div>
                     <div>

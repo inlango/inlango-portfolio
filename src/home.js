@@ -106,13 +106,13 @@ export default class Home extends React.Component {
                     <h1>Whom have we worked with?</h1>
                     <div>
                         <div>
-                            <a href="http://sgssl.com/" target="_blank"><img src="/images/clients/logo-sinoglobal.png" /></a>
+                            <a href="http://sgssl.com/"  rel="noopener noreferrer" target="_blank"><img src="/images/clients/logo-sinoglobal.png"  alt="client logo - sinoglobal" /></a>
                         </div>
                         <div>
-                            <a href="http://www.sinomet.in/" target="_blank"><img src="/images/clients/logo-sinomet.png" /></a>
+                            <a href="http://www.sinomet.in/"  rel="noopener noreferrer" target="_blank"><img src="/images/clients/logo-sinomet.png" alt="client logo - sinomet" /></a>
                         </div>
                         <div>
-                            <a href="https://wkdrycleaners.com.au/" target="_blank"><img src="/images/clients/logo-whiteknight-drycleaners.png" /></a>
+                            <a href="https://wkdrycleaners.com.au/"  rel="noopener noreferrer" target="_blank"><img src="/images/clients/logo-whiteknight-drycleaners.png"  alt="client logo - white knight drycleaners" /></a>
                         </div>
                     </div>
                 </div>

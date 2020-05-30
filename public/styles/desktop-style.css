@@ -28,6 +28,10 @@ body {
         overflow: hidden;
         overflow-y: scroll;
     }
+    
+    .inlango-container::-webkit-scrollbar {
+        width: 12px;
+    }
 }
 
 .inlango-container-intro {
@@ -451,6 +455,9 @@ body {
     overflow: hidden;
     overflow-y: scroll;
 }
+.inlango-container-dark::-webkit-scrollbar {
+    width: 12px;
+}
 
 .inlango-container-dark::after{
 
@@ -606,7 +613,7 @@ body {
     align-items: center;
 }
 
-.inlango-tabs a {
+.inlango-tabs button {
     padding: 1rem;
     color: var(--white);
     background-color: var(--dark-background);
@@ -614,26 +621,27 @@ body {
     box-sizing: border-box;
     text-align: center;
     display: table;
+    border:none;
 }
 
 @media screen and (max-width: 830px){
-    .inlango-tabs a {
+    .inlango-tabs button {
         font-size: 0.8rem;
         padding: 0.5rem;
     }
 }
 
-.inlango-tabs a span {
+.inlango-tabs button span {
     display: table-cell;
     vertical-align: middle;
 }
 
-.inlango-tabs a:hover {
+.inlango-tabs button:hover {
     background-color: var(--light-navy);
     color: var(--yellow);
 }
 
-.inlango-tabs a.active {
+.inlango-tabs button.active {
     border: 2px var(--yellow);
     border-style: none none solid none;
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 export default class BillboardSlider extends React.Component {
     constructor(props) {
@@ -37,7 +36,6 @@ export default class BillboardSlider extends React.Component {
             imageReady: this.state.imagesURL.length
         });
 
-        let tempCount = 0;
         let tempImage = [];
 
         this.state.imagesURL.forEach(
@@ -139,7 +137,7 @@ export default class BillboardSlider extends React.Component {
 
         //if (this.state.imageReady.every((image) => { return image === true })) {
 
-        if (this.state.imageReady != 0) {
+        if (this.state.imageReady !== 0) {
             return (
 
                 <div className="inlango-home-billboard" id="inlango-home-billboard">
@@ -169,7 +167,7 @@ export default class BillboardSlider extends React.Component {
                             </div>
                             <div className="inlango-billboard-right" onClick={this.handleNextImage}><i className="fas fa-chevron-right fa-5x"></i></div>
                         </div>
-                        <img className="inlango-slider-image" id="inlango-slider-image" src={this.state.currentImage} />
+                        <img className="inlango-slider-image" id="inlango-slider-image" src={this.state.currentImage} alt="slider stock photo image" />
                     </div>
                 </div>
             );
