@@ -45,8 +45,16 @@ body {
 .inlango-logo {
     height: 150px;
 }
-
-.inlango-logo > img{
+.inlango-logo > a,
+.inlango-logo > a:active,
+.inlango-logo > a:focus,
+.inlango-logo > a:visited{
+    height: 100%;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+}
+.inlango-logo > a> img{
     height: 100%;
     width: auto;
 }

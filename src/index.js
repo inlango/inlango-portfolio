@@ -84,7 +84,7 @@ class App extends React.Component {
             {/*<!--intro section-->*/}
             <div className="inlango-container-intro">
                 <div className="inlango-navigation-menu" id="inlango-navigation-menu">
-                    <div className="inlango-logo"><img src="images/logo-inlango.png" alt="inlango logo" /></div>
+                    <div className="inlango-logo"><a onClick={() => { this.handleMenuItemClick(0); }}><img src="images/logo-inlango.png" alt="inlango logo" /></a></div>
                     <div className="inlango-menu-button"><a href="javascript:void(0);" id="inlango-menu-button"
                         onClick={this.toggleMenu}><i className="fa fa-bars fa-3x"></i></a></div>
                     <ul id="inlango-responsive-menu">
