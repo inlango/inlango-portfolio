@@ -747,6 +747,7 @@ body {
         width: 100%;
         justify-self: center;
         max-height: 33Vh;
+        overflow: hidden;
     }
 }
 
