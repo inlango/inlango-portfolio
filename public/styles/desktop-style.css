@@ -376,6 +376,7 @@ body {
     color: var(--landing-page-gray);
     display: grid;
     grid-template-rows: auto auto auto;
+    grid-template-columns: 100%;
 }
 
 .inlango-service-card h2{
@@ -662,6 +663,17 @@ body {
     padding: 2rem 9.7%;
     grid-template-columns: 40% 20% 20% 20%;
     font-size: 0.8rem;
+}
+
+@media screen and (max-width: 425px) {    
+    .inlango-footer {
+        grid-template-columns: 100%;
+    }
+    .inlango-footer > div{
+        margin-top: 10%;
+        justify-self: center !important;
+        text-align: center !important;
+    }
 }
 
 .inlango-footer h2{
