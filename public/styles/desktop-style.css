@@ -605,7 +605,7 @@ body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 20% 80%;
-    word-break: break-all;
+    word-break: break-word;
 }
 
 .inlango-tabs > div:nth-of-type(1){
