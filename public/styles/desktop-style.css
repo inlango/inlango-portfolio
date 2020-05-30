@@ -746,6 +746,7 @@ body {
     .portfolio-cards {
         width: 100%;
         justify-self: center;
+        max-height: 33Vh;
     }
 }
 
@@ -771,46 +772,6 @@ body {
     border-radius: 10px;
     line-height: 400%;
     text-decoration: none;
-}
-
-.portfolio-cards-neon {
-    background: var(--neon-green);
-    border: 10px solid var(--neon-green);
-}
-
-.portfolio-cards-dark {
-    background : var(--dark-background);
-    border: 10px solid var(--dark-background);
-}
-
-.portfolio-cards-gray {
-    background : var(--landing-page-gray);
-    border: 10px solid var(--landing-page-gray);
-}
-
-.portfolio-cards-white {
-    background : var(--white);
-    border: 10px solid var(--white);
-}
-
-.portfolio-cards-blue {
-    background: var(--logo-blue);
-    border: 10px solid var(--logo-blue);
-}
-
-.portfolio-cards-red {
-    background: var(--logo-red);
-    border: 10px solid var(--logo-red);
-}
-
-.portfolio-cards-purple {
-    background: var(--logo-purple);
-    border: 10px solid var(--logo-purple);
-}
-
-.portfolio-cards-yellow {
-    background : var(--yellow);
-    border: 10px solid var(--yellow);
 }
 
 .inlango-portfolio-right {
@@ -853,4 +814,44 @@ body {
 
 .inlango-portfolio-desktop {
     display: block;
+}
+
+.portfolio-cards-neon {
+    background: var(--neon-green);
+    border: 10px solid var(--neon-green);
+}
+
+.portfolio-cards-dark {
+    background : var(--dark-background);
+    border: 10px solid var(--dark-background);
+}
+
+.portfolio-cards-gray {
+    background : var(--landing-page-gray);
+    border: 10px solid var(--landing-page-gray);
+}
+
+.portfolio-cards-white {
+    background : var(--white);
+    border: 10px solid var(--white);
+}
+
+.portfolio-cards-blue {
+    background: var(--logo-blue);
+    border: 10px solid var(--logo-blue);
+}
+
+.portfolio-cards-red {
+    background: var(--logo-red);
+    border: 10px solid var(--logo-red);
+}
+
+.portfolio-cards-purple {
+    background: var(--logo-purple);
+    border: 10px solid var(--logo-purple);
+}
+
+.portfolio-cards-yellow {
+    background : var(--yellow);
+    border: 10px solid var(--yellow);
 }
