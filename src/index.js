@@ -8,7 +8,6 @@ import About from './about';
 import Contact from './contact';
 import Portfolio from './portfolio';
 import Services from './services';
-import Footer from './footer';
 
 class App extends React.Component {
 
