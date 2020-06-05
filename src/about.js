@@ -7,7 +7,7 @@ export default class About extends React.Component {
 
     render() {
         return (
-            <div>
+            <section>
                 {/*<!--white container-->*/}
                 <div className="inlango-container inlango-container-light">
                     <h1>What we do</h1>
@@ -33,7 +33,7 @@ export default class About extends React.Component {
                         design, logo design, hosting and content writing.
                     </p>
                 </div>
-            </div>
+            </section>
         );
     }
 }

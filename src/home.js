@@ -1,4 +1,5 @@
 import React from 'react';
+import SlideStrip from './slideStrip'
 
 export default class Home extends React.Component {
     constructor(props) {
@@ -7,7 +8,7 @@ export default class Home extends React.Component {
 
     render() {
         return (
-            <div>
+            <section>
                 <div className="inlango-container inlango-container-purple-patch" id="content">
                     <h1>Our Services</h1>
                     <div className="row">
@@ -105,18 +106,16 @@ export default class Home extends React.Component {
                 <div className="inlango-home-clients">
                     <h1>Our Clients and Partners</h1>
                     <div>
-                        <div>
-                            <a href="http://sgssl.com/"  rel="noopener noreferrer" target="_blank"><img src="/images/clients/logo-sinoglobal.png"  alt="client logo - sinoglobal" /></a>
-                        </div>
-                        <div>
-                            <a href="http://www.sinomet.in/"  rel="noopener noreferrer" target="_blank"><img src="/images/clients/logo-sinomet.png" alt="client logo - sinomet" /></a>
-                        </div>
-                        <div>
-                            <a href="https://wkdrycleaners.com.au/"  rel="noopener noreferrer" target="_blank"><img src="/images/clients/logo-whiteknight-drycleaners.png"  alt="client logo - white knight drycleaners" /></a>
-                        </div>
+                        <SlideStrip clients={[
+                            ["http://sgssl.com/", "/images/clients/logo-sinoglobal.png", "sino global logo"],
+                            ["http://www.sinomet.in/", "/images/clients/logo-sinomet.png", "sinomet logo"],
+                            ["https://wkdrycleaners.com.au/", "/images/clients/logo-whiteknight-drycleaners.png", "white knight dry cleaners logo"],
+                            ["https://www.greymattasolutions.com/", "/images/clients/logo-graymata-solutions.png", "gray matta solutions logo"],
+                            ["https://c-res.com.au/", "/images/clients/logo-c-res.png", "c-res logo"]
+                        ]}/>
                     </div>
                 </div>
-            </div>
+            </section>
         );
     }
 

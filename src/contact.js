@@ -7,7 +7,7 @@ export default class Contact extends React.Component {
 
     render() {
         return (
-            <div>
+            <section>
                 {/*< !--body section-- >*/}
 
                 {/*<!--white container-->*/}
@@ -17,7 +17,7 @@ export default class Contact extends React.Component {
                         contact form under construction
                     </p>
                 </div>
-            </div>
+            </section>
         );
     }
 }

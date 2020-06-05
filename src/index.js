@@ -82,8 +82,8 @@ class App extends React.Component {
     render() {
         return <div>
             {/*<!--intro section-->*/}
-            <div className="inlango-container-intro">
-                <div className="inlango-navigation-menu" id="inlango-navigation-menu">
+            <header className="inlango-container-intro">
+                <nav className="inlango-navigation-menu" id="inlango-navigation-menu">
                     <div className="inlango-logo"><a onClick={() => { this.handleMenuItemClick(0); }}><img src="images/logo-inlango.png" alt="inlango logo" /></a></div>
                     <div className="inlango-menu-button"><a href="javascript:void(0);" id="inlango-menu-button"
                         onClick={this.toggleMenu}><i className="fa fa-bars fa-3x"></i></a></div>
@@ -94,14 +94,14 @@ class App extends React.Component {
                         <li><a onClick={() => { this.handleMenuItemClick(3); }} className={this.state.activeClasses[this.state.currentPageNumber][3]}>Services</a></li>
                         <li><a onClick={() => { this.handleMenuItemClick(4); }} className={this.state.activeClasses[this.state.currentPageNumber][4]}>Contact Us</a></li>
                     </ul>
-                </div>
+                </nav>
                 {/*<!--image slider-->*/}
                 {this.state.currentPageNumber === 0 ? <BillboardSlider /> : <FrontPage pageNumber={this.state.currentPageNumber} />}
-            </div>
+            </header>
             {/*<!--body section-->*/}
             {this.state.body[this.state.currentPageNumber]}
 
-            <div>
+            <footer>
                 {/*<!--footer section-->*/}
                 <div class="inlango-footer">
                     <div>
@@ -125,11 +125,12 @@ class App extends React.Component {
                         <a href="#linkedIn"><i class="fa fa-linkedin fa-lg"></i></a>
                     </div>
                 </div>
-            </div>
+            </footer>
         </div>
 
     }
 
 }
-ReactDOMServer.renderToString(<App />)
+ReactDOMServer.renderToString(
+    <App />)
 ReactDOM.render(<App />, document.getElementById("app"));

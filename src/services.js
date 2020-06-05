@@ -8,7 +8,7 @@ export default class Services extends React.Component {
 
     render() {
         return(
-            <div>
+            <section>
                 {/*<!--body section-->*/}
 
                 {/*<!--white container-->*/}
@@ -16,7 +16,7 @@ export default class Services extends React.Component {
                     <h1>click to see details</h1>
                     <Tabs />
                 </div>
-            </div>
+            </section>
         );
     }
 }

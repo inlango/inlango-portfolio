@@ -112,6 +112,7 @@ body {
 }
 
 .inlango-navigation-menu .inlango-menu-button a{
+    padding: 2rem;
     display: none;
 }
 
@@ -128,6 +129,7 @@ body {
         "logo logo logo logo logo menu-button"
         "menu-item menu-item menu-item menu-item menu-item menu-item";
         height: auto;
+        padding: 0;
     }
 
     .inlango-navigation-menu ul {
@@ -142,6 +144,7 @@ body {
     .inlango-navigation-menu .inlango-menu-button {
         justify-self: right;
         align-self: center;
+        overflow: hidden;
     }
 
     .inlango-navigation-menu .inlango-menu-button a {
@@ -184,6 +187,33 @@ body {
 
 .inlango-responsive {
 	display: block !important;
+    animation: 1s linear 0s normal opacity;
+}
+
+.fa-bars {
+    animation: 0.25s reverse ease-in slideDown;
+}
+
+.fa-times {
+    animation: 0.25s forwards ease-in fontIncrease;
+}
+
+@keyframes fontIncrease {
+    0% {
+        font-size: 0rem; 
+    }
+    100% {
+        font-size: 3em;  
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(160%);
+    }
 }
 
 /*homepage image slider(billboard)*/
@@ -546,15 +576,16 @@ body {
 }
 
 /*inlango home clients*/
+}
+
+.inlango-home-clients > div > div> div{ 
+    
+}
+
 .inlango-home-clients {
-    height: 50vh;
+    height: 42vh;
     color: var(--white);
     box-sizing: border-box;
-}
-@media screen and (max-width: 425px) {
-    .inlango-home-clients {
-        height: 30vh;
-    }
 }
 
 .inlango-home-clients > h1 {
@@ -566,55 +597,97 @@ body {
 }
 
 .inlango-home-clients > div {
-    height: 40%;
+    position: relative;
+    height: 50%;
     background-color: var(--light-navy);
-    display: grid;
-    grid-template-rows: 100%;
-    grid-template-columns: 40% 20% 40%;
-    align-items: center;
-    justify-items: center;
+    box-sizing: border-box;
 }
-
 
 .inlango-home-clients > div > div {
-    background-color: var(--white);
-    height: 76%;
-    width: 15vw;
-    box-sizing: border-box;
-    /*border-radius: 15% 15% 15% 15% / 35% 35% 35% 35%;*/
+    height: 100%;
+    width: 66.66%;
+    margin-left: 16.665%;
     overflow: hidden;
 }
-.inlango-home-clients > div > div:hover {    
+
+@keyframes slideWithOpacity {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    
+    }
+    100% {
+        transform: translateX(24vw);
+        opacity: 1;
+    }
+}
+.inlango-home-clients > div > div > div {
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 200vh;
+    animation: 1s ease-in 0s 1 opacity;
+    transition: opacity 0.5s ease-in;
+}
+
+.inlango-home-clients .inlango-client-logo {
+    background-color: var(--white);
+    /*border-radius: 15% 15% 15% 15% / 35% 35% 35% 35%;*/
+    overflow: hidden;   
+    display: inline-block;
+    height: 70%;
+    margin-top: 2%;
+    margin-left: 4.33vw;
+    width: 16.66vw;
+}
+.inlango-home-clients .inlango-client-logo:hover {    
     animation: 0.5s ease-out 0s 1 addGlow forwards;
 }
 
-.inlango-home-clients > div > div:nth-of-type(1) {
-    justify-self: right;
-}
-.inlango-home-clients > div > div:nth-of-type(3) {
-    justify-self: left;
-}
-
-@media screen and (max-width: 830px ) {
-    .inlango-home-clients > div > div {
-        width: 20vw;
-    }
-    .inlango-home-clients > div > div:nth-of-type(1), 
-    .inlango-home-clients > div > div:nth-of-type(3) {
-        justify-self: center;
-    }
-}
-@media screen and (max-width: 570px ) {
-    .inlango-home-clients > div > div {
-        width: 25vw;
-    }
-}
-
-.inlango-home-clients > div > div > a > img{
+.inlango-home-clients .inlango-client-logo img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
+@media screen and (max-width: 425px) {
+
+    .inlango-home-clients {
+        height: 33vh;
+    }
+
+    .inlango-home-clients .inlango-client-logo {
+        height: 50%;
+        margin-top: 1.5%;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 425px) {
+
+    .inlango-home-clients {
+        height: 37vh;
+    }
+
+    .inlango-home-clients .inlango-client-logo {
+        height: 50%;
+        margin-top: 2.5%;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+
+    .inlango-home-clients {
+        height: 42vh;
+    }
+
+    .inlango-home-clients .inlango-client-logo {
+        height: 50%;
+        margin-top: 2.5%;
+    }
+}
+
+
+
 /*Inlango tabs*/
 .inlango-tabs {
     min-height: 60vh;
