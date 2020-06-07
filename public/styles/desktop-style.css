@@ -188,6 +188,8 @@ body {
 .inlango-responsive {
 	display: block !important;
     animation: 1s linear 0s normal opacity;
+    position: relative;
+    z-index: 10000000;
 }
 
 .fa-bars {
@@ -207,19 +209,20 @@ body {
 }
 
 @keyframes fontIncrease2 {
+    
     0% {
-        transform: scale(0);
-        -o-transform: scale(0);
-        -ms-transform : scale(0); 
-        -moz-transform: scale(0);
-        -webkit-transform: scale(0);
+        transform: translateY(160%);
+        -o-transform: translateY(160%);
+        -ms-transform : translateY(160%); 
+        -moz-transform: translateY(160%);
+        -webkit-transform: translateY(160%);
     }
     100% {
-        transform: scale(1);
-        -o-transform: scale(1);
-        -ms-transform : scale(1); 
-        -moz-transform: scale(1);
-        -webkit-transform: scale(1); 
+        transform: translateY(0%);
+        -o-transform: translateY(0%);
+        -ms-transform : translateY(0%); 
+        -moz-transform: translateY(0%);
+        -webkit-transform: translateY(0%);
     }
 }
 
@@ -385,12 +388,15 @@ body {
 @keyframes wiggleVertical {
     0%{
         transform: translateY(0);
+        z-index: -1;
     }
     50% {
-        transform: translateY(50%);
+        transform: translateY(20%);
+        z-index: -1;
     }
     100% {
         transform: translateY(0);
+        z-index: -1;    
     }
 }
 .inlango-home-billboard a {
@@ -401,6 +407,8 @@ body {
     line-height: 3vh;
     animation: 2s ease-out 3s infinite wiggleVertical forwards;
     line-height: 170%;
+    position: relative;
+    z-index: -1;
 }
 
 /*dark - white alternating background container*/
