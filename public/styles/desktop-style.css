@@ -188,8 +188,6 @@ body {
 .inlango-responsive {
 	display: block !important;
     animation: 1s linear 0s normal opacity;
-    position: relative;
-    z-index: 1;
 }
 
 .fa-bars {
@@ -202,10 +200,10 @@ body {
 
 @keyframes fontIncrease {
     0% {
-        transform: scale(0); 
+        transform: scale(0) ;
     }
     100% {
-        transform: scale(1  );  
+        transform: scale(1) ; 
     }
 }
 
@@ -363,15 +361,12 @@ body {
 @keyframes wiggleVertical {
     0%{
         transform: translateY(0);
-        z-index: -1000;
     }
     50% {
-        transform: translateY(25%);
-        z-index: -1000;
+        transform: translateY(50%);
     }
     100% {
         transform: translateY(0);
-        z-index: -1000;
     }
 }
 .inlango-home-billboard a {
@@ -382,8 +377,6 @@ body {
     line-height: 3vh;
     animation: 2s ease-out 3s infinite wiggleVertical forwards;
     line-height: 170%;
-    position: relative;
-    z-index: -1;
 }
 
 /*dark - white alternating background container*/
@@ -583,7 +576,7 @@ body {
 }
 
 /*inlango home clients*/
-}
+
 
 .inlango-home-clients > div > div> div{ 
     
