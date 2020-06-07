@@ -202,10 +202,10 @@ body {
 
 @keyframes fontIncrease {
     0% {
-        font-size: 0rem; 
+        transform: scale(0); 
     }
     100% {
-        font-size: 3rem;  
+        transform: scale(1  );  
     }
 }
 
@@ -363,12 +363,15 @@ body {
 @keyframes wiggleVertical {
     0%{
         transform: translateY(0);
+        z-index: -1000;
     }
     50% {
         transform: translateY(25%);
+        z-index: -1000;
     }
     100% {
         transform: translateY(0);
+        z-index: -1000;
     }
 }
 .inlango-home-billboard a {
