@@ -192,27 +192,51 @@ body {
 
 .fa-bars {
     animation: 0.25s reverse ease-in slideDown;
+    -o-animation: 0.25s reverse ease-in slideDown;
+    -ms-animation : 0.25s reverse ease-in slideDown;
+    -moz-animation: 0.25s reverse ease-in slideDown;
+    -webkit-animation: 0.25s reverse ease-in slideDown;
 }
 
 .fa-times {
-    animation: 0.25s forwards ease-in fontIncrease;
+    animation: 0.25s forwards ease-in fontIncrease2;
+    -o-animation: 0.25s forwards ease-in fontIncrease2;
+    -ms-animation : 0.25s forwards ease-in fontIncrease2; 
+    -moz-animation: 0.25s forwards ease-in fontIncrease2;
+    -webkit-animation: 0.25s forwards ease-in fontIncrease2;
 }
 
-@keyframes fontIncrease {
+@keyframes fontIncrease2 {
     0% {
-        transform: scale(0) ;
+        transform: scale(0);
+        -o-transform: scale(0);
+        -ms-transform : scale(0); 
+        -moz-transform: scale(0);
+        -webkit-transform: scale(0);
     }
     100% {
-        transform: scale(1) ; 
+        transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform : scale(1); 
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1); 
     }
 }
 
 @keyframes slideDown {
     0% {
         transform: translateY(0%);
+        -o-transform: translateY(0%);
+        -ms-transform : translateY(0%); 
+        -moz-transform: translateY(0%);
+        -webkit-transform: translateY(0%);
     }
     100% {
         transform: translateY(160%);
+        -o-transform: translateY(160%);
+        -ms-transform : translateY(160%); 
+        -moz-transform: translateY(160%);
+        -webkit-transform: translateY(160%);
     }
 }
 
@@ -576,7 +600,6 @@ body {
 }
 
 /*inlango home clients*/
-
 
 .inlango-home-clients > div > div> div{ 
     
