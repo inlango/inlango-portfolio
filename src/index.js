@@ -106,7 +106,7 @@ class App extends React.Component {
                 <div class="inlango-footer">
                     <div>
                         <p>
-                            Inlango Consulting | Digital | IT Services 
+                            Inlango Consulting | Digital | IT Services
                         </p>
                         <p>&copy;2020 inlango.com</p>
                     </div>
@@ -131,6 +131,34 @@ class App extends React.Component {
     }
 
 }
+
+class Maintainence extends React.Component {
+
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        return (
+            <div>
+                <header className="inlango-container-intro">
+
+                    <nav className="inlango-navigation-menu" id="inlango-navigation-menu">
+                        <div className="inlango-logo"><a onClick={() => { this.handleMenuItemClick(0); }}><img src="images/logo-inlango.png" alt="inlango logo" /></a></div>
+                    </nav>
+                    <div className="inlango-container inlango-container-dark" id="content">
+                        <h1>
+                            Website under maintainence
+                                </h1>
+                        <p>In the meantime, contact us at - </p>
+                        <a href="mailto:admin@inlango.com">admin@inlango.com</a>
+                    </div>
+                </header>
+            </div>
+        );
+    }
+}
+
 ReactDOMServer.renderToString(
-    <App />)
-ReactDOM.render(<App />, document.getElementById("app"));
+    <Maintainence />)
+ReactDOM.render(<Maintainence />, document.getElementById("app"));

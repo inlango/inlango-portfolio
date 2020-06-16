@@ -109,9 +109,7 @@ export default class Home extends React.Component {
                         <SlideStrip clients={[
                             ["http://sgssl.com/", "/images/clients/logo-sinoglobal.png", "sino global logo"],
                             ["http://www.sinomet.in/", "/images/clients/logo-sinomet.png", "sinomet logo"],
-                            ["https://wkdrycleaners.com.au/", "/images/clients/logo-whiteknight-drycleaners.png", "white knight dry cleaners logo"],
-                            ["https://www.greymattasolutions.com/", "/images/clients/logo-graymata-solutions.png", "gray matta solutions logo"],
-                            ["https://c-res.com.au/", "/images/clients/logo-c-res.png", "c-res logo"]
+                            ["https://wkdrycleaners.com.au/", "/images/clients/logo-whiteknight-drycleaners.png", "white knight dry cleaners logo"]
                         ]}/>
                     </div>
                 </div>
@@ -120,3 +118,7 @@ export default class Home extends React.Component {
     }
 
 }
+
+{/*,
+                            ["https://www.greymattasolutions.com/", "/images/clients/logo-graymata-solutions.png", "gray matta solutions logo"],
+                        ["https://c-res.com.au/", "/images/clients/logo-c-res.png", "c-res logo"]*/}
