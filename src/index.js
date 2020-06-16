@@ -160,5 +160,5 @@ class Maintainence extends React.Component {
 }
 
 ReactDOMServer.renderToString(
-    <Maintainence />)
-ReactDOM.render(<Maintainence />, document.getElementById("app"));
+    <App />)
+ReactDOM.render(<App />, document.getElementById("app"));
