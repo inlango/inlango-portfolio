@@ -25,8 +25,6 @@ export default class Portfolio extends React.Component {
                                 <p>We developed this website for them</p>
                                 <h2>Client Name</h2>
                                 <p>White Knight Dry Cleaners</p>
-                                <h2>Technology Used</h2>
-                                <p>CSS / HTML / JavaScript</p>
                                 <a href="https://wkdrycleaners.com.au" rel="noopener noreferrer" target="_blank" className="portfolio-cards-button">Visit</a>
                             </div>
                         </div>
@@ -36,8 +34,6 @@ export default class Portfolio extends React.Component {
                                 <p>We developed this website for them</p>
                                 <h2>Client Name</h2>
                                 <p>Sinomet</p>
-                                <h2>Technology Used</h2>
-                                <p>CSS / HTML / JavaScript</p>
                                 <a href="http://sinomet.in" rel="noopener noreferrer" target="_blank" className="portfolio-cards-button">Visit</a>
                             </div>
                             <div className="portfolio-cards portfolio-cards-blue inlango-portfolio-right" >
@@ -50,8 +46,6 @@ export default class Portfolio extends React.Component {
                                 <p>We developed this website for them</p>
                                 <h2>Client Name</h2>
                                 <p>Sinomet</p>
-                                <h2>Technology Used</h2>
-                                <p>CSS / HTML / JavaScript</p>
                                 <a href="http://sinomet.in" rel="noopener noreferrer" target="_blank" className="portfolio-cards-button">Visit</a>
                             </div>
                         </div>
@@ -65,8 +59,6 @@ export default class Portfolio extends React.Component {
                                 <p>We developed this website for them</p>
                                 <h2>Client Name</h2>
                                 <p>Sinoglobal</p>
-                                <h2>Technology Used</h2>
-                                <p>CSS / HTML / JavaScript</p>
                                 <a href="http://www.sgssl.com" rel="noopener noreferrer" target="_blank" className="portfolio-cards-button">Visit</a>
                             </div>
                         </div>

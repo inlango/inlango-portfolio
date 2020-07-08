@@ -159,13 +159,13 @@ export default class BillboardSlider extends React.Component {
                 <div className="inlango-home-billboard" id="inlango-home-billboard">
                     <div>
                         <div className="inlango-billboard-content">
-                            <div className="inlango-billboard-left" onClick={this.handlePrevImage}><i className="fas fa-chevron-left fa-5x"></i></div>
+                            <div className="inlango-billboard-left" onClick={this.handlePrevImage}><i className="fas fa-chevron-left fa-3x"></i></div>
                             <div>
                                 <h1><span>Welcome!</span></h1>
                                 {this.state.contents[this.state.imageCount]}
                                 <a href="#content"><span>Here's what we do do.</span></a>
                             </div>
-                            <div className="inlango-billboard-right" onClick={this.handleNextImage}><i className="fas fa-chevron-right fa-5x"></i></div>
+                            <div className="inlango-billboard-right" onClick={this.handleNextImage}><i className="fas fa-chevron-right fa-3x"></i></div>
                         </div>
                         <img className="inlango-slider-image" id="inlango-slider-image" src={this.state.currentImage} alt="slider stock photo image" />
                     </div>

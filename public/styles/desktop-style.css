@@ -27,6 +27,7 @@ body {
     .inlango-container {
         overflow: hidden;
         overflow-y: scroll;
+        padding: 5% 3%;
     }
     
     .inlango-container::-webkit-scrollbar {
@@ -38,12 +39,12 @@ body {
     background-color: var(--dark-background);    
     color: var(--white);
     display: grid; 
-    grid-template-rows: 150px minmax(auto, 100vh);
+    grid-template-rows: 100px minmax(auto, 100vh);
     height: 100vh;
 }
 
 .inlango-logo {
-    height: 150px;
+    height: 100px;
 }
 .inlango-logo > a,
 .inlango-logo > a:active,
@@ -71,7 +72,8 @@ body {
 
 .inlango-navigation-menu ul{
     justify-self: right;
-    align-self: center;
+    align-self: flex-end;
+    padding: 0 0 2% 0;
 }
 
 .inlango-navigation-menu > ul > li{
@@ -117,8 +119,10 @@ body {
 }
 
 .inlango-navigation-menu .inlango-active {
-    border: 1.4px solid var(--dark-background);
-
+    border: 3px solid var(--yellow);
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 
 @media screen and (max-width: 830px) {
@@ -516,7 +520,21 @@ body {
 }
 
 .inlango-service-card ul {      
-    padding-inline-start: unset;
+    padding-inline-start: 20px;
+    width: 60%;
+    margin-left: 20%;
+    text-align: left;
+    color: var(--white);
+}
+
+@media screen and (max-width: 830px) {
+    .inlango-service-card ul {      
+        padding-inline-start: 10px;
+        width: 100%;
+        margin-left: 0%;
+        text-align: left;
+        color: var(--white);
+    }
 }
 
 .inlango-service-card li {
@@ -524,6 +542,13 @@ body {
     font-weight: 400;
     font-family: 'DM Sans', sans-serif;  
 }
+
+.inlango-service-card li::before {  
+    content: "> ";
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
 /*dark background with logo*/
 .inlango-container-dark {
     height: auto;    

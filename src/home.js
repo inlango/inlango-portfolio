@@ -1,5 +1,6 @@
 import React from 'react';
-import SlideStrip from './slideStrip'
+import SlideStrip from './slideStrip';
+import {Link} from 'react-router-dom';
 
 export default class Home extends React.Component {
     constructor(props) {
@@ -30,7 +31,7 @@ export default class Home extends React.Component {
                                 </ul>
                             </div>
                             <div>
-                                <a href="#link">Learn More</a>
+                                <Link to="/portfolio">Learn More</Link>
                             </div>
                         </div>
                         {/*<!--service card-->*/}
@@ -53,7 +54,7 @@ export default class Home extends React.Component {
                                 </ul>
                             </div>
                             <div>
-                                <a href="#link">Learn More</a>
+                                <Link to="/portfolio">Learn More</Link>
                             </div>
                         </div>
                     </div>
@@ -77,7 +78,7 @@ export default class Home extends React.Component {
                                 </ul>
                             </div>
                             <div>
-                                <a href="#link">Learn More</a>
+                                <Link to="/portfolio">Learn More</Link>
                             </div>
                         </div>
                         {/*<!--service card--*/}
@@ -98,7 +99,7 @@ export default class Home extends React.Component {
                                 </ul>
                             </div>
                             <div>
-                                <a href="#link">Learn More</a>
+                                <Link to="/portfolio">Learn More</Link>
                             </div>
                         </div>
                     </div>

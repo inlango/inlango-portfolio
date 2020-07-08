@@ -1,6 +1,7 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
-export default class FrontPage extends React.Component {
+class FrontPage extends React.Component {
 
     constructor(props) {
         super(props);
@@ -65,8 +66,31 @@ export default class FrontPage extends React.Component {
     }
 
     render() {
-        return (
-            this.state.frontPageContent[this.state.pagesKey[this.props.pageNumber-1]]
-        );
+        if(this.props.location.pathname === "/about-us"){
+            return (
+                /*this.state.frontPageContent[this.state.pagesKey[this.props.pageNumber-1]]*/
+                this.state.frontPageContent[this.state.pagesKey[0]]
+            );
+        }
+        else if (this.props.location.pathname === "/portfolio") {
+            return (
+                /*this.state.frontPageContent[this.state.pagesKey[this.props.pageNumber-1]]*/
+                this.state.frontPageContent[this.state.pagesKey[1]]
+            );
+        }
+        else if (this.props.location.pathname === "/services") {
+            return (
+                /*this.state.frontPageContent[this.state.pagesKey[this.props.pageNumber-1]]*/
+                this.state.frontPageContent[this.state.pagesKey[2]]
+            );
+        }
+        else {
+            return (
+                /*this.state.frontPageContent[this.state.pagesKey[this.props.pageNumber-1]]*/
+                this.state.frontPageContent[this.state.pagesKey[3]]
+            );
+        }
     }
 }
+
+export default withRouter(FrontPage);

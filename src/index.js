@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter, Link, Route, Switch, NavLink} from 'react-router-dom';
 import BillboardSlider from './billboardSlider';
-import ReactDOMServer from 'react-dom/server';
 import Home from './home';
 import FrontPage from './frontpage';
 import About from './about';
@@ -22,14 +22,7 @@ class App extends React.Component {
                 <Portfolio />,
                 <Services />,
                 <Contact />
-            ],
-            activeClasses: [
-                ["inlango-active", "", "", "", ""],
-                ["", "inlango-active", "", "", ""],
-                ["", "", "inlango-active", "", ""],
-                ["", "", "", "inlango-active", ""],
-                ["", "", "", "", "inlango-active"]
-            ],
+            ]
         };
 
         this.handleNavClick = this.handleNavClick.bind(this);
@@ -80,7 +73,7 @@ class App extends React.Component {
     }
 
     render() {
-        return <div>
+        return <BrowserRouter><div>
             {/*<!--intro section-->*/}
             <header className="inlango-container-intro">
                 <nav className="inlango-navigation-menu" id="inlango-navigation-menu">
@@ -88,18 +81,30 @@ class App extends React.Component {
                     <div className="inlango-menu-button"><a href="javascript:void(0);" id="inlango-menu-button"
                         onClick={this.toggleMenu}><i className="fa fa-bars fa-3x"></i></a></div>
                     <ul id="inlango-responsive-menu">
-                        <li><a onClick={() => { this.handleMenuItemClick(0); }} className={this.state.activeClasses[this.state.currentPageNumber][0]}>Home</a></li>
-                        <li><a onClick={() => { this.handleMenuItemClick(1); }} className={this.state.activeClasses[this.state.currentPageNumber][1]}>About Us</a></li>
-                        <li><a onClick={() => { this.handleMenuItemClick(2); }} className={this.state.activeClasses[this.state.currentPageNumber][2]}>Portfolio</a></li>
-                        <li><a onClick={() => { this.handleMenuItemClick(3); }} className={this.state.activeClasses[this.state.currentPageNumber][3]}>Services</a></li>
-                        <li><a onClick={() => { this.handleMenuItemClick(4); }} className={this.state.activeClasses[this.state.currentPageNumber][4]}>Contact Us</a></li>
+                        <li><NavLink to="/" onClick={() => { this.handleMenuItemClick(0); }} exact activeClassName="inlango-active">Home</NavLink></li>
+                        <li><NavLink to="/about-us" onClick={() => { this.handleMenuItemClick(1); }} activeClassName="inlango-active">About Us</NavLink></li>
+                        <li><NavLink to="/portfolio" onClick={() => { this.handleMenuItemClick(2); }} activeClassName="inlango-active">Portfolio</NavLink></li>
+                        <li><NavLink to="/services" onClick={() => { this.handleMenuItemClick(3); }} activeClassName="inlango-active">Services</NavLink></li>
+                        <li><NavLink to="/contact" onClick={() => { this.handleMenuItemClick(4); }} activeClassName="inlango-active">Contact Us</NavLink></li>
                     </ul>
                 </nav>
                 {/*<!--image slider-->*/}
-                {this.state.currentPageNumber === 0 ? <BillboardSlider /> : <FrontPage pageNumber={this.state.currentPageNumber} />}
+                {/*this.state.currentPageNumber === 0 ? <BillboardSlider /> : <FrontPage pageNumber={this.state.currentPageNumber} />*/}
+                <Switch>
+                    <Route component={BillboardSlider} exact path="/"/>
+                    <Route component={FrontPage} path={["/about-us", "/portfolio", "/services", "/contact" ]} />
+                </Switch>
             </header>
             {/*<!--body section-->*/}
-            {this.state.body[this.state.currentPageNumber]}
+            {/*this.state.body[this.state.currentPageNumber]*/}
+
+            <Switch>
+                <Route component={Home} exact path="/"/>
+                <Route component={About} path="/about-us"/>
+                <Route component={Portfolio} path="/portfolio"/>
+                <Route component={Services} path="/services"/>
+                <Route component={Contact} path="/contact"/>
+            </Switch>
 
             <footer>
                 {/*<!--footer section-->*/}
@@ -126,7 +131,7 @@ class App extends React.Component {
                     </div>
                 </div>
             </footer>
-        </div>
+        </div></BrowserRouter>
 
     }
 
@@ -159,6 +164,6 @@ class Maintainence extends React.Component {
     }
 }
 
-ReactDOMServer.renderToString(
-    <App />)
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.render(
+        <App />
+    , document.getElementById("app"));
