@@ -8,6 +8,7 @@ import About from './about';
 import Contact from './contact';
 import Portfolio from './portfolio';
 import Services from './services';
+import Careers from './careers';
 
 class App extends React.Component {
 
@@ -85,6 +86,7 @@ class App extends React.Component {
                         <li><NavLink to="/about-us" onClick={() => { this.handleMenuItemClick(1); }} activeClassName="inlango-active">About Us</NavLink></li>
                         <li><NavLink to="/portfolio" onClick={() => { this.handleMenuItemClick(2); }} activeClassName="inlango-active">Portfolio</NavLink></li>
                         <li><NavLink to="/services" onClick={() => { this.handleMenuItemClick(3); }} activeClassName="inlango-active">Services</NavLink></li>
+                        <li><NavLink to="/careers" onClick={() => { this.handleMenuItemClick(3); }} activeClassName="inlango-active">Careers</NavLink></li>
                         <li><NavLink to="/contact" onClick={() => { this.handleMenuItemClick(4); }} activeClassName="inlango-active">Contact Us</NavLink></li>
                     </ul>
                 </nav>
@@ -92,7 +94,7 @@ class App extends React.Component {
                 {/*this.state.currentPageNumber === 0 ? <BillboardSlider /> : <FrontPage pageNumber={this.state.currentPageNumber} />*/}
                 <Switch>
                     <Route component={BillboardSlider} exact path="/"/>
-                    <Route component={FrontPage} path={["/about-us", "/portfolio", "/services", "/contact" ]} />
+                    <Route component={FrontPage} path={["/about-us", "/portfolio", "/services", "/careers", "/contact" ]} />
                 </Switch>
             </header>
             {/*<!--body section-->*/}
@@ -103,6 +105,7 @@ class App extends React.Component {
                 <Route component={About} path="/about-us"/>
                 <Route component={Portfolio} path="/portfolio"/>
                 <Route component={Services} path="/services"/>
+                <Route component={Careers} path="/careers"/>
                 <Route component={Contact} path="/contact"/>
             </Switch>
 

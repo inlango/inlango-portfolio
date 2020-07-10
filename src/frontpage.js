@@ -37,6 +37,15 @@ class FrontPage extends React.Component {
                                 <p>We have a few projects on our resume, and we are proud of our work.</p>                                
                                 <a href="#portfolio-content">Check out our brag board. You'll wanna be there too!</a>
                             </div>,
+                careers:  <div className="inlango-container inlango-container-dark" id="content">
+                             <h1>
+                             Careers
+                             </h1>
+                             <h2>Want to work with us?</h2>    
+                             <p>Inlango has a diverse team of fresh talents and professionals with 20 plus years of experience. We also work closely with universities to provide practical exposure to students via internship and industry projects.</p>      
+                             <p>We believe the strength of an organisation lies with people. The backbone of a company is its Human Capital. We look into the well-being of our people for their happiness. Inlango welcomes people who take challenges and are result oriented.</p>    
+                             <p>If you are interested to explore opportunities with us then email your resume at <a href="mailto:admin@inlango.com">admin@inlango.com</a></p> 
+                         </div>,
                 services:   <div className="inlango-container inlango-container-dark" id="content">
                                 <h1>Our services</h1>
                                 <h2>What services do we offer?</h2>
@@ -60,6 +69,7 @@ class FrontPage extends React.Component {
                 "about",
                 "portfolio",
                 "services",
+                "careers",
                 "contact"
             ]
         };
@@ -84,10 +94,16 @@ class FrontPage extends React.Component {
                 this.state.frontPageContent[this.state.pagesKey[2]]
             );
         }
-        else {
+        else if (this.props.location.pathname === "/careers") {
             return (
                 /*this.state.frontPageContent[this.state.pagesKey[this.props.pageNumber-1]]*/
                 this.state.frontPageContent[this.state.pagesKey[3]]
+            );
+        }
+        else {
+            return (
+                /*this.state.frontPageContent[this.state.pagesKey[this.props.pageNumber-1]]*/
+                this.state.frontPageContent[this.state.pagesKey[4]]
             );
         }
     }
