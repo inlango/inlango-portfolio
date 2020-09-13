@@ -108,7 +108,7 @@ class App extends React.Component {
 
             <footer>
                 {/*<!--footer section-->*/}
-                <div class="inlango-footer">
+                <div className="inlango-footer">
                     <div>
                         <p>
                             Inlango Consulting | Digital | IT Services
@@ -125,9 +125,9 @@ class App extends React.Component {
                     </div>
                     <div>
                         <h2>Social media</h2>
-                        <a href="#facebook"><i class="fa fa-facebook fa-lg"></i></a>
-                        <a href="#twitter"><i class="fa fa-twitter fa-lg"></i></a>
-                        <a href="#linkedIn"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a href="#facebook"><i className="fa fa-facebook fa-lg"></i></a>
+                        <a href="#twitter"><i className="fa fa-twitter fa-lg"></i></a>
+                        <a href="#linkedIn"><i className="fa fa-linkedin fa-lg"></i></a>
                     </div>
                 </div>
             </footer>
