@@ -1,0 +1,69 @@
+:root {
+    --neon-green: #5DFE93;
+    --dark-background: #21212E;
+    --white: #FFFFFF;
+    --logo-blue: #3F619E ;
+    --logo-red: #FE5D5D ;
+    --logo-purple: #70309F ;
+    --yellow: #FEBF00 ;
+    --landing-page-gray: #66667E ;
+    --light-navy: #252533;
+    font-size: 2vh;
+}
+
+
+.mt-5 {
+    margin-top: 10rem;
+}
+
+.portfolio-cards {
+    min-height: 60vh;
+    border-radius: 5px;
+}
+
+.portfolio-cards-text{
+    color: white;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+.portfolio-cards-button {
+    padding: 1rem 5rem;
+    background: #FEBF00;
+    box-shadow: -1px 1px 20px 3px #FEBF00;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.portfolio-cards-neon {
+    background: var(--neon-green);
+}
+
+.portfolio-cards-dark {
+    background : var(--dark-background);
+}
+
+.portfolio-cards-gray {
+    background : var(--landing-page-gray);
+}
+
+.portfolio-cards-white {
+    background : var(--white);
+}
+
+.portfolio-cards-blue {
+    background: var(--logo-blue);
+}
+
+.portfolio-cards-red {
+    background: var(--logo-red);
+}
+
+.portfolio-cards-purple {
+    background: var(--logo-purple);
+}
+
+.portfolio-cards-yellow {
+    background : var(--yellow);
+}
+
