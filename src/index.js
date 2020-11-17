@@ -127,7 +127,7 @@ class App extends React.Component {
                         <h2>Social media</h2>
                         <a href="#facebook"><i className="fa fa-facebook fa-lg"></i></a>
                         <a href="#twitter"><i className="fa fa-twitter fa-lg"></i></a>
-                        <a href="#linkedIn"><i className="fa fa-linkedin fa-lg"></i></a>
+                        <a href="https://www.linkedin.com/company/inlango/about/"><i className="fa fa-linkedin fa-lg"></i></a>
                     </div>
                 </div>
             </footer>
