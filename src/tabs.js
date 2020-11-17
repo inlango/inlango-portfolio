@@ -8,42 +8,47 @@ export default class Tabs extends React.Component {
             contents: [
                 
                 <ul>
-                    <li>Agile leadership</li>
-                    <li>DevOps</li>
-                    <li>Technology review and audit</li>
-                    <li>Strategy formation</li>
-                    <li>Business Consulting</li>
-                    <li>Market Research</li>
+                    <li>Transform to enterprise agile</li>
+                                    <li>Technology review and audit</li>
+                                    <li>Strategy formation</li>
+                                    <li>Roadmap planning </li>
+                                    <li>Business Consulting</li>
+                                    <li>IT coaching and mentoring </li>
+                                    <li>DevOps roadmap </li>
                 </ul>,
                 <ul>
-                    <li>Website Design</li>
-                    <li>Web Development</li>
-                    <li>Mobile App Development</li>
-                    <li>E-commerce Development</li>
-                    <li>Graphic Design</li>
-                    <li>User Experience Design</li>
-                    <li>User Interface Design</li>
-                    <li>Prototyping</li>
+                    <li>Cloud Computing:  Research and Migrations using AWS, Azure, Google, Hybrid</li>
+                                    <li>API and Microservices Development </li>
+                                    <li>Website Design</li>
+                                    <li>Web Development</li>
+                                    <li>Mobile App Development</li>
+                                    <li>E-commerce Development</li>
+                                    <li>Market Research</li>
+                                    <li>Digital Marketing:  Pay Per Click Marketing, Email Marketing</li>
                 </ul>,
                 <ul>
-                    <li>cloud</li>
-                    <li>AWS</li>
-                    <li>Azure</li>
-                    <li>API and Microservices</li>
-                    <li>Hosting – Application, platform</li>
-                    <li>Testing</li>
-                    <li>Digital Marketing</li>
-                    <li>Pay Per Click Marketing</li>
-                    <li>E-mail Marketing</li>
-                    <li>Internet Marketing</li>
+                     <li>IT security</li>
+                                    <li>End to end software development and delivery</li>
+                                    <li>Graphic Design</li>
+                                    <li>User Experience Design</li>
+                                    <li>User Interface Design</li>
+                                    <li>Prototyping</li>
+                                    <li>Hosting – Application, platform</li>
+                                    <li>Testing: Automation and Manual</li>
+                                    <li>Research Writing</li>
+                                    <li>Business Plans</li>
+                                    <li>Proposals</li>
+                                    <li>Progress Reports</li>
+                                    <li>User Guide</li>
+                                    <li>Organizational Policies and Procedures</li>
                 </ul>,
                 <ul>
-                    <li>Research Writing</li>
-                    <li>Business Plans</li>
-                    <li>Proposals</li>
-                    <li>Progress Reports</li>
-                    <li>User Guides</li>
-                    <li>Organizational Policies and Procedures</li>
+                     <li>Research Writing</li>
+                                    <li>Business Plans</li>
+                                    <li>Proposals</li>
+                                    <li>Progress Reports</li>
+                                    <li>User Guides</li>
+                                    <li>Organizational Policies and Procedures</li>
                 </ul>
             ],
             icons: [

@@ -30,24 +30,16 @@ class FrontPage extends React.Component {
                                     Please get in touch with us via the form below</a>
                             </div>,
                 portfolio:  <div className="inlango-container inlango-container-dark" id="content">
-                                <h1>
-                                Our Work
-                                </h1>
-                                <h2>Can I see some samples?</h2>    
-                                <p>We have a few projects on our resume, and we are proud of our work.</p>                                
-                                <a href="#portfolio-content">Check out our brag board. You'll wanna be there too!</a>
+                                <h1>Our work</h1>
+                                <h2>Can I see some samples?</h2>
+                                <p>We have a few projects on our resume, and we are proud of our work.</p>
+                                <a href="portfolio-content">Check our bragboard. You'll wanna be there too!</a>
                             </div>,
                 services:   <div className="inlango-container inlango-container-dark" id="content">
                                 <h1>Our services</h1>
                                 <h2>What services do we offer?</h2>
                                 <p>
-                                    Inlango is a trusted partner when it comes to the digital transformation, IT services and technology
-                                    consulting. We are using new digital technologies to unlock untapped potential for our clients. We work
-                                    closely with our client teams for development and maintenance of website, mobile app, simple brochure site,
-                                    e-commerce store. We pride ourselves on high quality design and have the capability to create stunning
-                                    applications. We offer a variety of technologies with numerous applications to suit client preferences. Our
-                                    senior consultants are seasoned in technology consulting services to advice on developing new IT plans,
-                                    creating new digital strategy and review bottlenecks.
+                                Inlango is a reliable partner when it comes to digital, IT services and technology consulting offerings. Our expertise is being ahead of the technical curve by utilising new digital trends to unlock untapped potential for our clients. We work closely with our client teams for strategy formation, roadmap and implementation of solutions of all aspects of digital and technology services. We pride ourselves on high quality design and have the capability to create stunning applications with scalable and robust performance. We offer a variety of technologies with numerous applications to suit client preferences. Our team members are seasoned in consulting services to troubleshoot any bottlenecks to deliver client commitments on tight deadlines. 
                         
                         
                                 </p>

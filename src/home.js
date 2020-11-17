@@ -17,17 +17,18 @@ export default class Home extends React.Component {
                         <div className="inlango-service-card">
                             <div>
                                 <h2>Consulting</h2>
-                                <p>consulting across IT and business</p>
+                                <p>Drive vision to agile leaders to define strategic vision for their business journey </p>
                             </div>
                             <div>
                                 <i className="fas fa-people-arrows fa-5x"></i>
                                 <ul>
-                                    <li>Agile leadership</li>
-                                    <li>DevOps</li>
+                                    <li>Transform to enterprise agile</li>
                                     <li>Technology review and audit</li>
                                     <li>Strategy formation</li>
+                                    <li>Roadmap planning </li>
                                     <li>Business Consulting</li>
-                                    <li>Market Research</li>
+                                    <li>IT coaching and mentoring </li>
+                                    <li>DevOps roadmap </li>
                                 </ul>
                             </div>
                             <div>
@@ -38,19 +39,19 @@ export default class Home extends React.Component {
                         <div className="inlango-service-card">
                             <div>
                                 <h2>Digital</h2>
-                                <p>Migrate to the digital world</p>
+                                <p>Our aim is to help our clients to unlock the power of digital to propel growth of business.</p>
                             </div>
                             <div>
                                 <i className="fas fa-random fa-5x"></i>
                                 <ul>
+                                    <li>Cloud Computing:  Research and Migrations using AWS, Azure, Google, Hybrid</li>
+                                    <li>API and Microservices Development </li>
                                     <li>Website Design</li>
                                     <li>Web Development</li>
                                     <li>Mobile App Development</li>
                                     <li>E-commerce Development</li>
-                                    <li>Graphic Design</li>
-                                    <li>User Experience Design</li>
-                                    <li>User Interface Design</li>
-                                    <li>Prototyping</li>
+                                    <li>Market Research</li>
+                                    <li>Digital Marketing:  Pay Per Click Marketing, Email Marketing</li>
                                 </ul>
                             </div>
                             <div>
@@ -63,18 +64,25 @@ export default class Home extends React.Component {
                         <div className="inlango-service-card">
                             <div>
                                 <h2>IT services</h2>
-                                <p>Various IT services</p>
+                                <p>We provide end to end aspects of IT services for our clients.</p>
                             </div>
                             <div>
                                 <i className="fas fa-laptop fa-5x"></i>
                                 <ul>
-                                    <li>Cloud - AWS and Azure</li>
-                                    <li>API and Microservices</li>
+                                    <li>IT security</li>
+                                    <li>End to end software development and delivery</li>
+                                    <li>Graphic Design</li>
+                                    <li>User Experience Design</li>
+                                    <li>User Interface Design</li>
+                                    <li>Prototyping</li>
                                     <li>Hosting – Application, platform</li>
-                                    <li>Testing</li>
-                                    <li>Pay Per Click Marketing</li>
-                                    <li>E-mail Marketing</li>
-                                    <li>Internet Marketing</li>
+                                    <li>Testing: Automation and Manual</li>
+                                    <li>Research Writing</li>
+                                    <li>Business Plans</li>
+                                    <li>Proposals</li>
+                                    <li>Progress Reports</li>
+                                    <li>User Guide</li>
+                                    <li>Organizational Policies and Procedures</li>
                                 </ul>
                             </div>
                             <div>
